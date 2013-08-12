@@ -33,6 +33,11 @@ public class BookHandlerTest {
             assertThat(bookHandler.getTotalPrice(), is(80.));
         }
 
+        @Test
+        public void shouldGetTotalNumberOfDifferentBooks(){
+
+        }
+
 
     }
 

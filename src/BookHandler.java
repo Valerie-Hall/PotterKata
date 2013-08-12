@@ -1,13 +1,6 @@
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Thoughtworker
- * Date: 8/9/13
- * Time: 3:08 PM
- * To change this template use File | Settings | File Templates.
- */
 public class BookHandler {
     LinkedHashMap<String, Integer> bookNames = new LinkedHashMap<String, Integer>();
 
@@ -32,7 +25,6 @@ public class BookHandler {
         }
         return totalBooks;
     }
-
 
     public double getTotalPrice() {
         double totalPrice = 8 * getTotalNumberOfBooks();
