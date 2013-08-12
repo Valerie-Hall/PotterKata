@@ -19,9 +19,9 @@ public class BookHandler {
         bookNames.put("Book 1", 1);
         bookNames.put("Book 2", 2);
         bookNames.put("Book 3", 2);
-        bookNames.put("Book 4", 2);
-        bookNames.put("Book 5", 2);
-        bookNames.put("Book 6", 1);
+        bookNames.put("Book 4", 1);
+        bookNames.put("Book 5", 0);
+        bookNames.put("Book 6", 0);
         bookNames.put("Book 7", 0);
     }
 
