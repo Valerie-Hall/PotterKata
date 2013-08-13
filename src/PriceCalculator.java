@@ -1,12 +1,5 @@
 import java.util.HashMap;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Thoughtworker
- * Date: 8/12/13
- * Time: 11:35 AM
- * To change this template use File | Settings | File Templates.
- */
 public class PriceCalculator {
     BookHandler bookHandler;
 
@@ -14,8 +7,6 @@ public class PriceCalculator {
     public PriceCalculator(BookHandler bookHandler) {
         this.bookHandler = bookHandler;
     }
-
-
 
     public double getTotalPrice() {
         double totalPrice = 0;

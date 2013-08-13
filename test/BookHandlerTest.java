@@ -23,9 +23,6 @@ public class BookHandlerTest {
         assertThat(bookHandler.bookNames.values().toString(), is("[1, 2, 2, 2, 2, 1, 0]"));
     }
 
-
-
-
     @Test
      public void shouldGetNumberOfDifferentBooks(){
         assertThat(bookHandler.getNumberOfDifferentBooks(), is(6));
