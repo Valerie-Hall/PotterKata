@@ -20,6 +20,7 @@ public class PriceCalculator {
     public double getDiscount(int number) {
         HashMap<Integer, Double> discountMap = new HashMap<Integer, Double>();
         discountMap.put(0, .0);
+        discountMap.put(1, .0);
         discountMap.put(2, .05);
         discountMap.put(3, .10);
         discountMap.put(4, .15);
