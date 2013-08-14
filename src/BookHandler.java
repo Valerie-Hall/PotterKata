@@ -12,9 +12,9 @@ public class BookHandler {
         bookNames.put("Book 1", 1);
         bookNames.put("Book 2", 2);
         bookNames.put("Book 3", 2);
-        bookNames.put("Book 4", 1);
-        bookNames.put("Book 5", 0);
-        bookNames.put("Book 6", 0);
+        bookNames.put("Book 4", 2);
+        bookNames.put("Book 5", 2);
+        bookNames.put("Book 6", 1);
         bookNames.put("Book 7", 0);
     }
 
@@ -32,6 +32,22 @@ public class BookHandler {
             if (book.getValue() > 0) {
                 numberOfBooks++;
                 bookNames.put(book.getKey(), book.getValue() - 1);
+            }
+        }
+        if(numberOfBooks == 0 )
+            booksRemaining = false;
+        return numberOfBooks;
+    }
+
+    public Integer getNumberOfDifferentBooksUpToFive() {
+        int numberOfBooks = 0;
+        for (Map.Entry<String, Integer> book : bookNames.entrySet()) {
+            if (book.getValue() > 0) {
+                numberOfBooks++;
+                bookNames.put(book.getKey(), book.getValue() - 1);
+                if(numberOfBooks>=5){
+                    return numberOfBooks;
+                }
             }
         }
         if(numberOfBooks == 0 )

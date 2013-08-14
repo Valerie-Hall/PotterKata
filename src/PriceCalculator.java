@@ -1,4 +1,6 @@
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 
 public class PriceCalculator {
     BookHandler bookHandler;
@@ -12,7 +14,8 @@ public class PriceCalculator {
         double totalPrice = 0;
 
         for (Integer number : bookHandler.getSetsOfDifferentBooks()) {
-            totalPrice += 8 * number * getDiscount(number);
+                totalPrice += 8 * number * getDiscount(number);
+
         }
         return totalPrice;
     }
